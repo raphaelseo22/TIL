@@ -12,12 +12,18 @@ def refree(num1, num2, num3, answer) :
         print('ball')
     elif num3 == answer :
         print('ball')
+    elif num1 != answer :
+        print('out')
+
+
+print('숫자가 일치하면 strike, 일치하지 않으면 out 만약 다른 위치의 숫자와 동일하다면 ball을 표시해줍니다. ')
+print('같은 위치의 숫자보다 더 크면 big 작으면 small을 표시해줍니다.')
+print('만약 다른위치의 숫자와 일치한다면 big&small을 먼저 알려준뒤 다음 줄에 다른위치의 숫자와 일치 여부를 알려줍니다.')
 
 one_more_trial = "1"
 while True :
     if one_more_trial == "0" : break
     a = str(random.randint(100,1000))
-    print(a)
     while True :
         try :
             q = input('Enter the three number :  ')
