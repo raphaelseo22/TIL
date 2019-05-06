@@ -19,7 +19,7 @@ while True :
                 money = money - 600
             elif drink == '5' :
                 money = money - 500
-            if money <= 0 :
+            if money < 0 :
                 print('금액이 부족합니다')
                 money = money + int(input('돈을 넣어주세요 : '))
                 left_money = input('주문을 그만 하시려면 0 더 하시려면 1 금액을 추가하고 싶으시면 2를 입력해주세요 : ')
